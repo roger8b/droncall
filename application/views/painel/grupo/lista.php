@@ -38,7 +38,7 @@
                                     if($tb['pertence'] == 1){
                                         echo '<a class="btn btn-block btn-primary" href="' .base_url('painel_controle/grupo/entrar/')  .$tb['id']. '">Entrar</a>';
                                     } else {
-                                        echo '<a class="btn btn-block btn-primary" href="#">Solicitar</a>';
+                                        echo '<a class="btn btn-block btn-primary" href="' .base_url('painel_controle/grupo/solicitar/')  .$tb['id']. '">Solicitar</a>';
                                     }
 
                                      ?>

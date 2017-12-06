@@ -45,4 +45,8 @@ class Lista_model extends CI_Model
         print_r($result);   
         return $result;
     }
+
+    function solicitar($parametros){
+        return $this->db->insert('solicitacao_grupo', $parametros);
+    }
 }

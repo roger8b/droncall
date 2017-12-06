@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `user_grupo` (
   `id` INT(12) NOT NULL AUTO_INCREMENT,
   `id_user` INT(12) NOT NULL,
   `id_grupo` INT(12) NOT NULL,
-  `user_status` SMALLINT(1),
+  `status` SMALLINT(1),
   PRIMARY KEY (`id`)
   ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
   
