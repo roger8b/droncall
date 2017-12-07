@@ -115,6 +115,8 @@
             <li><a href="<?php echo base_url('painel_controle/cadastro/grupo') ?>"><i class=" fa fa-plus"></i> <span>Cadastrar</span></a></li>
             <?php } ?>
               <li><a href="<?php echo base_url('painel_controle/grupos') ?>"><i class="fa fa-users"></i> <span>Lista</span></a></li>
+
+              <li><a href="<?php echo base_url('painel_controle/meus_grupos') ?>"><i class="fa fa-users"></i> <span>Meus Grupos</span></a></li>
             </ul>
           </li>
       </ul>

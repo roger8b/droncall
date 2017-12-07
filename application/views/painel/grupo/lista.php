@@ -10,7 +10,6 @@
                                 <th>Administrador</th>
                                 <th>Status</th>
                                 <th>Editar</th>
-                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,18 +32,7 @@
                                 <td>
                                     <a href="<?php echo base_url('painel_controle/grupo/') .$tb['id']?>"><i class="fa fa-edit"></i></a>
                                 </td>
-                                <td>
-                                    <?php 
-                                    if($tb['pertence'] == 1){
-                                        echo '<a class="btn btn-block btn-primary" href="' .base_url('painel_controle/grupo/entrar/')  .$tb['id']. '">Entrar</a>';
-                                    } else {
-                                        echo '<a class="btn btn-block btn-primary" href="' .base_url('painel_controle/grupo/solicitar/')  .$tb['id']. '">Solicitar</a>';
-                                    }
-
-                                     ?>
-                                     <a href=""></a>
-
-                                </td>
+                                
                             </tr>
                             <?php }?>
                         </tbody>
@@ -57,6 +45,3 @@
 </section>
 </section>
 
-<script type="text/javascript">
-    entrar(1,2,3);
-</script>

@@ -47,24 +47,5 @@ class Lista extends CI_Controller
 
     }
 
-    public function solicitar($grupo_id){
-
-        $user = $this->Login_model->dados_usuario($this->session->userdata('uid'));
-
-        $parametros = [
-            'id' => 'default',
-            'id_user' => $user[0]->id,
-            'id_grupo' => $grupo_id,
-            'status' => 1, 
-        ];
-
-        $dados['enviado'] = $this->Lista_model->solicitar($parametros);
-        $dados['titulo'] = "Grupos";
-        $dados['pg_header'] = "Grupos";
-        $dados['_view'] = 'painel/grupo/lista';
-        $dados['tb_grupo'] = $this->Lista_model->tabela($user[0]->id);
-        $dados['usuario'] = $this->Login_model->dados_usuario($this->session->userdata('uid'));
-        $this->load->view('painel/index', $dados);
-
-    }
+    
 }
