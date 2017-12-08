@@ -69,6 +69,7 @@ $route['painel_controle/grupo/(:num)'] = 'painel/grupo/Alterar/index/$1';
 $route['painel_controle/grupo/alterar/(:num)'] = 'painel/grupo/Alterar/grupo/$1';
 $route['painel_controle/grupo/entrar/(:num)'] = 'painel/grupo/Lista/entrar/$1';
 $route['painel_controle/meus_grupos'] = 'painel/grupo/Meus_grupos';
+$route['painel/grupo/meus_grupos/informacao/(:num)'] = 'painel/grupo/Info/index/$1';
 
 // Inicio
 $route['inicio'] = 'inicio/acesso/Login';

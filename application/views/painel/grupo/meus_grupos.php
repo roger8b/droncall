@@ -14,7 +14,7 @@
             <div class="icon">
               <i class=""></i>
             </div>
-            <a href="<?php echo base_url('painel/grupo/informacao/') .$tb_grupo[$i]['id_grupo'] ?>" class="small-box-footer">
+            <a href="<?php echo base_url('painel/grupo/meus_grupos/informacao/') .$tb_grupo[$i]['id_grupo'] ?>" class="small-box-footer">
               Entrar <i class="fa fa-arrow-circle-right"></i>
             </a>
           </div>

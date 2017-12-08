@@ -47,8 +47,12 @@
       'select'      : true,
       'scrollX'     : true,
       'language'    : { "url": "<?php echo base_url('assets/plugins/data_tables/Portuguese-Brasil.json') ?>" }
+    });
+      $('#tabela').removeClass( 'display' )
+      .addClass('table table-hover table-bordered');
+
       
-    })
+
   });
 
   //iCheck for checkbox and radio inputs
