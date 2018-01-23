@@ -39,7 +39,7 @@ class Cadastro extends CI_Controller
     function novo()
     {
 
-        // Regras de validação do Formulario de registro de frupo
+        // Regras de validação do Formulario de registro de grupo
 
         $this->form_validation->set_rules('nome', 'Nome', 'trim|required');
         $this->form_validation->set_rules('admin', 'Nome', 'trim|required');

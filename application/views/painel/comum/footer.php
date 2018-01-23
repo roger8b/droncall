@@ -50,9 +50,22 @@
     });
       $('#tabela').removeClass( 'display' )
       .addClass('table table-hover table-bordered');
+  });
 
-      
-
+  $(function () {
+    $('#tabela_info').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : true,
+      'ordering'    : true,
+      'info'        : false,
+      'autoWidth'   : true,
+      'select'      : true,
+      'scrollX'     : true,
+      'language'    : { "url": "<?php echo base_url('assets/plugins/data_tables/Portuguese-Brasil.json') ?>" }
+    });
+      $('#tabela_info').removeClass( 'display' )
+      .addClass('table table-hover table-bordered');
   });
 
   //iCheck for checkbox and radio inputs
