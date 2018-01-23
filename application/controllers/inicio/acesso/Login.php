@@ -10,7 +10,6 @@ class Login extends CI_Controller
     {
         parent::__construct();
 
-       //$this->output->enable_profiler(TRUE);
         $this->load->helper('form');
         $this->load->library('form_validation');
         $this->load->model('inicio/Login_model');

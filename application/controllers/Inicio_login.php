@@ -10,7 +10,6 @@ class Inicio_login extends CI_Controller
     {
         parent::__construct();
 
-        $this->output->enable_profiler(TRUE);
         $this->load->model('inicio/Inicio_model');
         $this->load->helper('form');
         $this->Inicio_model->get_admin();
