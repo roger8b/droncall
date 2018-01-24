@@ -29,7 +29,10 @@
     //entrar(1,2,3);
 // Multiselect    
     $('#select').select2({
-      theme: "bootstrap" 
+      theme: "classic" 
+    });
+    $('#select2').select2({
+      theme: "classic" 
     });
 // Mascara    
     $(document).ready(function(){
