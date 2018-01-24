@@ -16,37 +16,20 @@ window.confirma = function (status) {
     }
 };
 
-window.entrar = function (status,user,grupo) {
-    if (status == 1) {
-        //alert("Usuário registrado com sucesso!!!");
-        $.alert({
-            title: 'Solicitar ingresso no Grupo',
-            content: 'Verificamos que você não esta inscrito neste grupo!!! <br> Gostaria de enviar uma solicitação para o administrador ? ',
-            buttons: {
-                'confirmar':{
-                    text: 'Enviar',
-                    btnClass: 'btn-blue',
-                    action: function () {
-                        $.alert ({
-                            title: 'Enviado',
-                            content: 'Sua solicitação foi enviada para o administrador do grupo!!!<br> Aguade a liberação da sua solicitação.',
-                            buttons: {
-                                OK: function () {
-                                    window.location = "/droncall/painel_controle/grupo/entrar/" + user + "/" + grupo;
-                            }
-                        }
+window.remover = function () {
+    $.alert({
+        title: 'Remover Usuário do Grupo',
+        content: 'Tem certeza que gostaria de remover este usuário do Grupo???',
+        buttons: {
+            SIM: function () {
+                document.getElementById("remover").submit();
+            },
 
-                        });
-                    }
-                },
-                Sair: function () {
-                    
-                }
+            NÃO: function () {
+
             }
-        });
-
-        return true;
-    }
+        }
+    })
 };
 
 

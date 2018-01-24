@@ -37,7 +37,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h3 class="text-center">Remover Integrantes</h3>
-							<?php echo form_open('painel/grupo/meus_grupos/informacao/remover/' .$id_grupo) ?>
+							<?php echo form_open('painel/grupo/meus_grupos/informacao/remover/' .$id_grupo, ['id' => 'remover']) ?>
 
 							<!-- Seleção de Integrante -->
 							<div class="form-group has-feedback <?php if (form_error('user')) {echo " has-error ";};?>">
@@ -57,8 +57,9 @@
 								</div>
 							</div>
 							<?php echo form_error('user'); ?>
-							<button type="submit" class="btn btn-primary text-center">Enviar</button>
+							
 							<?php echo form_close() ?>
+							<button onclick="remover()" class="btn btn-danger text-center">Enviar</button>
 						</div>
 					</div>
 				</div>
